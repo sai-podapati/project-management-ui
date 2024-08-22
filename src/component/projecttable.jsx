@@ -39,7 +39,7 @@ import './project.css';
             metadata: '{  purpose: demo}'
           }
           ]);
-      // console.error('Error fetching data:', error);
+      console.error('Error fetching data:', error);
       }
     };
 
@@ -65,7 +65,7 @@ import './project.css';
             ))
           ) : (
             <tr>
-              <td colSpan="4">General response</td>
+              <td colSpan="4">Fetch project service is not responding.</td>
             </tr>
           )}
         </tbody>

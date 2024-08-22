@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import './App.css';
 import Feedback from './component/feedback';
+import Project from './component/projecttable';
 
 function App() {
   const [activeTab, setActiveTab] = useState(null);
@@ -20,9 +21,9 @@ function App() {
             <li onClick={() => handleTabClick('project')}>Project</li>
             <li onClick={() => handleTabClick('feedback')}>Feedback</li>
           </ul>
-        </div>
+        </div> 
         <div className="right-pane">
-          {activeTab === 'project' && <div>Project tab chosen</div>}
+          {activeTab === 'project' && <Project />}
           {activeTab === 'feedback' && <Feedback />}
         </div>
       </div>

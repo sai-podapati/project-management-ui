@@ -11,7 +11,7 @@ const Feedback = () => {
 
   const fetchProjectData = async () => {
     try {
-      const response = await fetch('https://api.example.com/projects');
+      const response = await fetch('http://localhost:8080/api/projectss');
       const data = await response.json();
       setDropdownOptions(data); // Update dropdown options with fetched data
     } catch (error) {

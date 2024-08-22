@@ -10,7 +10,7 @@ import './project.css';
 
     const fetchData = async () => {
       try {
-      const response = await fetch('https://api.example.com/projects');
+      const response = await fetch('http://localhost:8080/api/projectss');
       if (response.ok) {
         const data = await response.json();
         setData(data);
@@ -60,7 +60,7 @@ import './project.css';
                 <td>{project.id}</td>
                 <td>{project.name}</td>
                 <td>{project.createdon}</td>
-                <td>{project.metadata}</td>
+                <td>{project.metadata.purpose}</td>
               </tr>
             ))
           ) : (

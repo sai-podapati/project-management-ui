@@ -119,7 +119,7 @@ const Feedback = () => {
             ))
           ) : (
             <tr>
-              <td colSpan="4"> Fetch project service is not responding.</td>
+              <td colSpan="4"> Feedback not available.</td>
             </tr>
           )}
         </tbody>

@@ -19,12 +19,17 @@ function App() {
         <div className="left-pane">
           <ul className="tab-list">
             <li onClick={() => handleTabClick('project')}>Project</li>
+            <li onClick={() => handleTabClick('tasks')}>Tasks</li>
             <li onClick={() => handleTabClick('feedback')}>Feedback</li>
+            <li onClick={() => handleTabClick('dashboard')}>Dashboard</li>
+
           </ul>
         </div> 
         <div className="right-pane">
           {activeTab === 'project' && <Project />}
           {activeTab === 'feedback' && <Feedback />}
+          {activeTab === 'tasks' && 'Tasks tab not implemented yet'}
+          {activeTab === 'dashboard' && 'Dashboard tab not implemented yet'}
         </div>
       </div>
     </div>
